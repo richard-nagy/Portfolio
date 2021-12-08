@@ -5,8 +5,8 @@
 }
 
 @font-face {
-    font-family: Varela;
-    src: local(Righteous), url(../fonts/Varela-Regular.ttf) format("truetype");
+    font-family: Khula;
+    src: local(Righteous), url(../fonts/Khula-Regular.ttf) format("truetype");
 }
 
 :root {
@@ -59,7 +59,7 @@ li {
 }
 
 .profile p {
-    font-family: Varela;
+    font-family: Khula;
 }
 
 .profile h3 {
@@ -123,7 +123,7 @@ h3 {
 .item p {
     /* color: var(--gray); */
     color: white;
-    font-family: Varela;
+    font-family: Khula;
 }
 
 .option {
