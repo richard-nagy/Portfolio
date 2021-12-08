@@ -1,5 +1,21 @@
-body{
+@font-face {
+    font-family: Righteous;
+    src: local(Righteous), url(./fonts/Righteous-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: Varela;
+    src: local(Righteous), url(./fonts/Varela-Regular.ttf) format("truetype");
+}
+
+:root {
+    --blue: #364655;
+    --yellow: #f3dbb3;
+}
+
+body {
     margin: 10px;
+    background-color: var(--yellow);
 }
 
 ul {
@@ -7,6 +23,9 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    color: var(--blue);
+    font-family: Righteous;
+    font-size: 20px;
 }
 
 li {
@@ -20,4 +39,44 @@ li {
 li:hover:not(.active) {
     cursor: pointer;
     text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.items {
+    width: 80%;
+    height: 500px;
+}
+
+h2 {
+    font-family: Righteous;
+    margin: 0;
+    color: var(--blue);
+}
+
+h3 {
+    font-family: Righteous;
+    margin: 0;
+    color: var(--yellow);
+}
+
+.line {
+    height: 5px;
+    width: 100%;
+    background-color: var(--blue);
+    margin-bottom: 25px;
+}
+
+.item {
+    background-color: var(--blue);
+    padding: 10px;
+}
+
+p {
+    color: var(--yellow);
+    font-family: Varela;
 }
