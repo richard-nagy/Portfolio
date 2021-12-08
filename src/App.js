@@ -29,6 +29,21 @@ function App() {
                 <li>{words[language].work}</li>
                 <li>{words[language].experience}</li>
             </ul>
+            <div className="content">
+                <div className="items">
+                    <h2>ITEMS</h2>
+                    <div className="line"></div>
+                    <div className="item">
+                        <h3>Title</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Praesent urna nibh, pulvinar sed sollicitudin
+                            sed, pretium id ex. Cras mattis velit vel nisi
+                            pulvinar porta.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }
