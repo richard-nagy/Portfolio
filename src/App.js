@@ -9,12 +9,14 @@ const words = {
         etc: "ETC",
         work: "WORK",
         experience: "EXPERIENCE",
+        darkMode: "DARK MODE",
         switchTo: "HU",
     },
     HU: {
-        etc: "STB",
+        etc: "EGYÉB",
         work: "MUNKA",
         experience: "TAPASZTALAT",
+        darkMode: "SÖTÉT MÓD",
         switchTo: "EN",
     },
 };
@@ -25,9 +27,13 @@ function App() {
     return (
         <>
             <ul>
-                <li onClick={() => setLanguage(words[language].switchTo)}>
+                <li
+                    className="option"
+                    onClick={() => setLanguage(words[language].switchTo)}
+                >
                     {words[language].switchTo}
                 </li>
+                <li className="option">{words[language].darkMode}</li>
                 <li>{words[language].etc}</li>
                 <li>{words[language].work}</li>
                 <li>{words[language].experience}</li>

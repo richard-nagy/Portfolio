@@ -40,11 +40,7 @@ li {
     text-align: center;
     text-decoration: none;
     margin: 20px 25px 25px 25px;
-}
-
-li:hover:not(.active) {
     cursor: pointer;
-    text-decoration: underline;
 }
 
 .content {
@@ -124,4 +120,11 @@ h3 {
 .item p {
     color: var(--yellow);
     font-family: Varela;
+}
+
+.option {
+    font-size: 14px;
+    margin: 25px 5px 25px 10px;
+    text-decoration: underline;
+    text-decoration-style: dashed;
 }
