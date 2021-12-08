@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+
+const words = {
+    EN: {
+        etc: "ETC",
+        work: "WORK",
+        experience: "EXPERIENCE",
+        language: "HU",
+    },
+    HU: {
+        etc: "STB",
+        work: "MUNKA",
+        experience: "TAPASZTALAT",
+        language: "EN",
+    },
+};
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [language, setLanguage] = useState("EN");
+
+    return (
+        <div className="body">
+            <ul>
+                <li onClick={() => setLanguage("HU")}>
+                    {words[language].language}
+                </li>
+                <li>{words[language].etc}</li>
+                <li>{words[language].work}</li>
+                <li>{words[language].experience}</li>
+            </ul>
+        </div>
+    );
 }
 
 export default App;
