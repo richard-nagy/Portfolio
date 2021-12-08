@@ -9,13 +9,13 @@ const words = {
         etc: "ETC",
         work: "WORK",
         experience: "EXPERIENCE",
-        language: "HU",
+        switchTo: "HU",
     },
     HU: {
         etc: "STB",
         work: "MUNKA",
         experience: "TAPASZTALAT",
-        language: "EN",
+        switchTo: "EN",
     },
 };
 
@@ -25,8 +25,8 @@ function App() {
     return (
         <>
             <ul>
-                <li onClick={() => setLanguage("HU")}>
-                    {words[language].language}
+                <li onClick={() => setLanguage(words[language].switchTo)}>
+                    {words[language].switchTo}
                 </li>
                 <li>{words[language].etc}</li>
                 <li>{words[language].work}</li>
