@@ -51,11 +51,15 @@ li {
     gap: 40px;
 }
 
+.leftBar {
+    width: 200px;
+}
+
 .profile {
     display: flex;
     flex-direction: column;
+    position: fixed;
     align-items: center;
-    max-width: 200px;
 }
 
 .profile p {

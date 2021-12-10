@@ -116,20 +116,22 @@ function App() {
                 <li onClick={() => setTab("Work")}>{language.work}</li>
             </ul>
             <div className="content">
-                <div className="profile">
-                    <img src={profilePicture} alt="Profile" />
-                    <h3>{language.title}</h3>
-                    <div className="icons">
-                        <a href="https://www.linkedin.com/in/rich%C3%A1rd-nagy-320285201/">
-                            <img src={linkedinLogo} alt="LinkedInIcon" />
-                        </a>
-                        <a href="https://github.com/richard-nagy">
-                            <img src={githubLogo} alt="GitHubIcon" />
-                        </a>
+                <div className="leftBar">
+                    <div className="profile">
+                        <img src={profilePicture} alt="Profile" />
+                        <h3>{language.title}</h3>
+                        <div className="icons">
+                            <a href="https://www.linkedin.com/in/rich%C3%A1rd-nagy-320285201/">
+                                <img src={linkedinLogo} alt="LinkedInIcon" />
+                            </a>
+                            <a href="https://github.com/richard-nagy">
+                                <img src={githubLogo} alt="GitHubIcon" />
+                            </a>
+                        </div>
+                        <p>nagy.richard0630@gmail.com</p>
+                        <p>+36 20 237 1090</p>
+                        <p>Richárd Nagy</p>
                     </div>
-                    <p>nagy.richard0630@gmail.com</p>
-                    <p>+36 20 237 1090</p>
-                    <p>Richárd Nagy</p>
                 </div>
                 {kekw(tab, language)}
             </div>
