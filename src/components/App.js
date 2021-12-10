@@ -1,13 +1,13 @@
 import { useState } from "react";
-import "./App.css";
+import "./App.scoped.css";
 import profilePicture from "../pictures/profilePicture.png";
-import linkedinLogo from "../pictures/linkedinLogo.png";
-import githubLogo from "../pictures/githubLogo.png";
 import bookmanager from "../pictures/bookmanager.png";
 import bookshelf from "../pictures/bookshelf.png";
 import Work from "./Work";
 import Experience from "./Experience";
 import AboutMe from "./AboutMe";
+import useLocalStorage from "use-local-storage";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const words = {
     EN: {
@@ -15,6 +15,7 @@ const words = {
         work: "WORK",
         experience: "EXPERIENCE",
         darkMode: "DARK MODE",
+        lightMode: "LIGHT MODE",
         language: "EN",
         switchTo: "HU",
         website: "Website",
@@ -26,6 +27,7 @@ const words = {
         work: "MUNKA",
         experience: "TAPASZTALAT",
         darkMode: "SÖTÉT MÓD",
+        lightMode: "VILÁGOS MÓD",
         language: "HU",
         switchTo: "EN",
         website: "Weboldal",
@@ -77,7 +79,7 @@ const experience = {
 };
 
 const aboutMe = {
-    type: "About Me",
+    type: "ABOUT ME",
     text: { EN: "Text about me", HU: "Rólam szöveg" },
 };
 
@@ -97,45 +99,66 @@ function App() {
     const [language, setLanguage] = useState(words["EN"]);
     const [tab, setTab] = useState("Work");
 
+    const defaultDark = window.matchMedia("(data-theme: dark)").matches;
+    const [theme, setTheme] = useLocalStorage(
+        "theme",
+        defaultDark ? "dark" : "light"
+    );
+
     return (
-        <>
-            <ul>
-                <li
-                    className="option"
-                    onClick={() => {
-                        setLanguage(words[language.switchTo]);
-                    }}
-                >
-                    {language.switchTo}
-                </li>
-                <li className="option" onClick={()=> console.log("")}>{language.darkMode}</li>
-                <li onClick={() => setTab("About Me")}>{language.AboutMe}</li>
-                <li onClick={() => setTab("Experience")}>
-                    {language.experience}
-                </li>
-                <li onClick={() => setTab("Work")}>{language.work}</li>
-            </ul>
-            <div className="content">
-                <div className="leftBar">
-                    <div className="profile">
-                        <img src={profilePicture} alt="Profile" />
-                        <h3>{language.title}</h3>
-                        <div className="icons">
-                            <a href="https://www.linkedin.com/in/rich%C3%A1rd-nagy-320285201/">
-                                <img src={linkedinLogo} alt="LinkedInIcon" />
-                            </a>
-                            <a href="https://github.com/richard-nagy">
-                                <img src={githubLogo} alt="GitHubIcon" />
-                            </a>
+        <div className="body" data-theme={theme}>
+            <div className="app">
+                <ul>
+                    <li
+                        className="option"
+                        onClick={() => {
+                            setLanguage(words[language.switchTo]);
+                        }}
+                    >
+                        {language.switchTo}
+                    </li>
+                    <li
+                        className="option"
+                        onClick={() => {
+                            const newTheme =
+                                theme === "light" ? "dark" : "light";
+                            setTheme(newTheme);
+                        }}
+                    >
+                        {theme === "light"
+                            ? language.darkMode
+                            : language.lightMode}
+                    </li>
+                    <li onClick={() => setTab("About Me")}>
+                        {language.AboutMe}
+                    </li>
+                    <li onClick={() => setTab("Experience")}>
+                        {language.experience}
+                    </li>
+                    <li onClick={() => setTab("Work")}>{language.work}</li>
+                </ul>
+                <div className="content">
+                    <div className="leftBar">
+                        <div className="profile">
+                            <img src={profilePicture} alt="Profile" />
+                            <h3>{language.title}</h3>
+                            <div className="icons">
+                                <a href="https://www.linkedin.com/in/rich%C3%A1rd-nagy-320285201/">
+                                    <AiFillGithub />
+                                </a>
+                                <a href="https://github.com/richard-nagy">
+                                    <AiFillLinkedin />
+                                </a>
+                            </div>
+                            <p>nagy.richard0630@gmail.com</p>
+                            <p>+36 20 237 1090</p>
+                            <p>Richárd Nagy</p>
                         </div>
-                        <p>nagy.richard0630@gmail.com</p>
-                        <p>+36 20 237 1090</p>
-                        <p>Richárd Nagy</p>
                     </div>
+                    {switcher(tab, language)}
                 </div>
-                {switcher(tab, language)}
             </div>
-        </>
+        </div>
     );
 }
 
