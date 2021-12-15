@@ -1,0 +1,10 @@
+@font-face {
+	font-family: Righteous;
+	src: local(Righteous),
+		url(./fonts/Righteous-Regular.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: Khula;
+	src: local(Righteous), url(./fonts/Khula-Regular.ttf) format("truetype");
+}

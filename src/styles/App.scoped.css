@@ -1,0 +1,176 @@
+@import "animation.css";
+@import "fonts.css";
+
+html,
+body,
+#root {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0px;
+	overflow: hidden;
+	animation: hideScrollbar 0s 2.5s forwards;
+}
+
+.body {
+	height: 100%;
+	width: 100%;
+	background-color: var(--secondary);
+	overflow: auto;
+	transition: all 0.5s;
+}
+
+.app {
+	background-color: var(--secondary);
+	margin: auto;
+	max-width: 1200px;
+	padding: 10px;
+	transition: all 0.5s;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	color: var(--primary);
+	font-family: Righteous;
+	font-size: 20px;
+	transition: all 0.5s;
+	opacity: 0;
+	animation: showNavbar 1s 1.5s forwards;
+}
+
+li {
+	float: right;
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	margin: 20px 25px 25px 25px;
+	cursor: pointer;
+}
+
+.content {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: 40px;
+}
+
+.leftBar {
+	width: 200px;
+	height: 340px;
+	display: flex;
+	justify-content: center;
+	animation: showLeftbar 1s, moveLeftbar 1s 1s forwards;
+	margin-left: 50%;
+	margin-right: -50%;
+	transform: translateX(-50%);
+}
+
+.profile {
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+	align-items: center;
+}
+
+.profile p {
+	font-family: Khula;
+}
+
+.profile h3 {
+	text-align: center;
+	color: var(--primary);
+	transition: all 0.5s;
+}
+
+.profile p {
+	color: var(--primary);
+	margin: 5px;
+	font-weight: bold;
+	font-size: 14px;
+	transition: all 0.5s;
+}
+
+.profile img {
+	width: 150px;
+	height: auto;
+	border: 5px solid var(--primary);
+	margin-bottom: 10px;
+	transition: all 0.5s;
+}
+
+.profile .icons {
+	margin: 20px 0 10px 0;
+}
+
+.profile .icons a {
+	margin: 10px;
+	cursor: pointer;
+	color: var(--primary);
+	font-size: 30px;
+	transition: all 0.5s;
+}
+
+.items {
+	flex: 1 1 300px;
+	min-width: 300px;
+	opacity: 0;
+	animation: itemMoveIn 1s 1s forwards;
+}
+
+h2 {
+	font-family: Righteous;
+	margin: 0;
+	color: var(--primary);
+	transition: all 0.5s;
+}
+
+h3 {
+	font-family: Righteous;
+	margin: 0;
+	color: var(--secondary);
+	transition: all 0.5s;
+}
+
+.line {
+	height: 5px;
+	width: 100%;
+	background-color: var(--primary);
+	margin-bottom: 25px;
+	transition: all 0.5s;
+}
+
+.item {
+	background-color: var(--primary);
+	padding: 15px;
+	margin-bottom: 25px;
+	transition: all 0.5s;
+}
+
+.item p {
+	color: var(--secondary);
+	font-family: Khula;
+	transition: all 0.5s;
+}
+
+.option {
+	font-size: 14px;
+	margin: 25px 5px 25px 10px;
+	text-decoration: underline;
+	text-decoration-style: dashed;
+}
+
+a {
+	color: var(--secondary);
+	transition: all 0.5s;
+}
+
+.item img {
+	height: 200px;
+	margin-top: 20px;
+	width: auto;
+}

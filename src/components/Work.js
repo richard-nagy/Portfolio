@@ -1,6 +1,6 @@
 export default function Work({ work, language }) {
     return (
-        <div className="items">
+        <>
             <h2>{work.type}</h2>
             <div className="line"></div>
 
@@ -28,6 +28,6 @@ export default function Work({ work, language }) {
                     </p>
                 </div>
             ))}
-        </div>
+        </>
     );
 }

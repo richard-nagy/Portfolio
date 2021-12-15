@@ -1,6 +1,6 @@
 export default function Experience({ experience, language }) {
     return (
-        <div className="items">
+        <>
             <h2>{experience.type}</h2>
             <div className="line" />
 
@@ -14,6 +14,6 @@ export default function Experience({ experience, language }) {
                     </p>
                 </div>
             ))}
-        </div>
+        </>
     );
 }
