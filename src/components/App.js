@@ -119,33 +119,33 @@ function App() {
 			{loaded && (
 				<div className="app">
 					<ul>
-						<li
-							className="option"
-							onClick={() => {
-								setLanguage(words[language.switchTo]);
-							}}
-						>
-							{language.switchTo}
-						</li>
-						<li
-							className="option"
-							onClick={() => {
-								const newTheme =
-									theme === "light" ? "dark" : "light";
-								setTheme(newTheme);
-							}}
-						>
-							{theme === "light"
-								? language.darkMode
-								: language.lightMode}
+						<li onClick={() => setTab("Work")}>{language.work}</li>
+						<li onClick={() => setTab("Experience")}>
+							{language.experience}
 						</li>
 						<li onClick={() => setTab("AboutMe")}>
 							{language.AboutMe}
 						</li>
-						<li onClick={() => setTab("Experience")}>
-							{language.experience}
+						<li className="option">
+							<p
+								onClick={() => {
+									setLanguage(words[language.switchTo]);
+								}}
+							>
+								{language.switchTo}
+							</p>
+							<p
+								onClick={() => {
+									const newTheme =
+										theme === "light" ? "dark" : "light";
+									setTheme(newTheme);
+								}}
+							>
+								{theme === "light"
+									? language.darkMode
+									: language.lightMode}
+							</p>
 						</li>
-						<li onClick={() => setTab("Work")}>{language.work}</li>
 					</ul>
 					<div className="content">
 						<div className="leftBar">

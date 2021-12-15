@@ -1,0 +1,19 @@
+@media only screen and (max-width: 600px) {
+	.app ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: end;
+		margin-bottom: 50px;
+	}
+
+	ul li {
+		font-size: 16px;
+		margin: 10px 0 0 20px;
+	}
+
+	ul .option {
+		font-size: 12px;
+		margin: 12px 0px 0px 10px;
+	}
+}

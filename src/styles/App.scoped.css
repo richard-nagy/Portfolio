@@ -4,6 +4,7 @@
 html,
 body,
 #root {
+	min-width: 320px;
 	height: 100%;
 }
 
@@ -31,6 +32,8 @@ body {
 }
 
 ul {
+	display: flex;
+	justify-content: right;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -44,12 +47,23 @@ ul {
 }
 
 li {
-	float: right;
 	display: block;
 	text-align: center;
 	text-decoration: none;
 	margin: 20px 25px 25px 25px;
 	cursor: pointer;
+}
+
+.option {
+	font-size: 14px;
+	margin: 24px 5px 25px 10px;
+	text-decoration: underline;
+	text-decoration-style: dashed;
+	display: flex;
+}
+
+ul li p {
+	margin: 0 0 0 10px;
 }
 
 .content {
@@ -61,7 +75,7 @@ li {
 
 .leftBar {
 	width: 200px;
-	height: 340px;
+	height: 350px;
 	display: flex;
 	justify-content: center;
 	animation: showLeftbar 1s, moveLeftbar 1s 1s forwards;
@@ -157,20 +171,15 @@ h3 {
 	transition: all 0.5s;
 }
 
-.option {
-	font-size: 14px;
-	margin: 25px 5px 25px 10px;
-	text-decoration: underline;
-	text-decoration-style: dashed;
-}
-
 a {
 	color: var(--secondary);
 	transition: all 0.5s;
 }
 
 .item img {
-	height: 200px;
+	height: auto;
 	margin-top: 20px;
-	width: auto;
+	width: 70%;
 }
+
+@import "mobileView.css";
