@@ -11,15 +11,14 @@ body,
 body {
 	margin: 0;
 	padding: 0px;
-	overflow: hidden;
-	animation: hideScrollbar 0s 2.5s forwards;
 }
 
 .body {
 	height: 100%;
 	width: 100%;
 	background-color: var(--secondary);
-	overflow: auto;
+	overflow-x: hidden;
+	animation: hideScrollbar 0s 3s forwards;
 	transition: all 0.5s;
 }
 
@@ -118,7 +117,7 @@ ul li p {
 }
 
 .profile .icons {
-	margin: 20px 0 10px 0;
+	margin: 10px 0 10px 0;
 }
 
 .profile .icons a {
@@ -145,7 +144,7 @@ h2 {
 
 h3 {
 	font-family: Righteous;
-	margin: 0;
+	margin: 0 0 10px 0;
 	color: var(--secondary);
 	transition: all 0.5s;
 }
@@ -169,6 +168,7 @@ h3 {
 	color: var(--secondary);
 	font-family: Khula;
 	transition: all 0.5s;
+	margin: 0;
 }
 
 a {
@@ -180,6 +180,10 @@ a {
 	height: auto;
 	margin-top: 20px;
 	width: 70%;
+}
+
+p a {
+	text-decoration: none;
 }
 
 @import "mobileView.css";

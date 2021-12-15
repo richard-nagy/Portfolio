@@ -23,7 +23,7 @@ const words = {
 		switchTo: "HU",
 		website: "Website",
 		technologies: "Used technologies",
-		title: "CATCHY TEXT HERE",
+		title: "MY NAME IS RICHÁRD AND I LIKE TO CODE.",
 	},
 	HU: {
 		AboutMe: "RÓLAM",
@@ -35,7 +35,7 @@ const words = {
 		switchTo: "EN",
 		website: "Weboldal",
 		technologies: "Használt technológiák",
-		title: "MENŐ SZÖVEG IDE",
+		title: "A NEVEM RICHÁRDS ÉS SZERETEK KÓDOLNI.",
 	},
 };
 
@@ -81,11 +81,6 @@ const experience = {
 	},
 };
 
-const aboutMe = {
-	type: "ABOUT ME",
-	text: { EN: "Text about me", HU: "Rólam szöveg" },
-};
-
 function switcher(prop, language) {
 	switch (prop) {
 		default:
@@ -94,7 +89,7 @@ function switcher(prop, language) {
 		case "Experience":
 			return <Experience experience={experience} language={language} />;
 		case "AboutMe":
-			return <AboutMe aboutMe={aboutMe} language={language} />;
+			return <AboutMe language={language.language} />;
 	}
 }
 
@@ -160,9 +155,9 @@ function App() {
 									<a href="https://github.com/richard-nagy">
 										<AiFillGithub />
 									</a>
-									<a href="https://www.linkedin.com/in/rich%C3%A1rd-nagy-320285201/">
+									{/* <a href="">
 										<AiFillLinkedin />
-									</a>
+									</a> */}
 								</div>
 								<p>nagy.richard0630@gmail.com</p>
 								<p>+36 20 237 1090</p>

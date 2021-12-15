@@ -40,6 +40,6 @@
 
 @keyframes hideScrollbar {
 	to {
-		overflow: auto;
+		overflow-x: auto;
 	}
 }
