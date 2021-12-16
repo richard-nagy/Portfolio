@@ -19,7 +19,9 @@ export default function Experience({ language }) {
 			<div className="item">
 				<h3>{experience.mate.title[language.language]}</h3>
 				<p>{experience.mate.text[language.language]}</p>
-				<p>{language.technologies}: React, PostgreSQL, Git</p>
+				<p>
+					{language.technologies}: <b>React, PostgreSQL, Git</b>
+				</p>
 			</div>
 		</>
 	);
