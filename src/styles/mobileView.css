@@ -16,4 +16,26 @@
 		font-size: 12px;
 		margin: 14px 0px 0px 10px;
 	}
+
+	.leftBar {
+		animation: showLeftbar 1s forwards;
+		position: static;
+	}
+
+	.profile {
+		position: static;
+	}
+}
+
+@media only screen and (min-width: 601px) {
+	.leftBar {
+		margin-left: 50%;
+		margin-right: -50%;
+		transform: translateX(-50%);
+		animation: showLeftbar 1s, moveLeftbar 1s 1s forwards;
+	}
+
+	.profile {
+		position: fixed;
+	}
 }
