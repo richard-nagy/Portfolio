@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import "../styles/App.scoped.css";
 import profilePicture from "../pictures/profilePicture.png";
-import bookmanager from "../pictures/bookmanager.png";
-import bookshelf from "../pictures/bookshelf.png";
 import Work from "./Work";
 import Experience from "./Experience";
 import AboutMe from "./AboutMe";
@@ -14,7 +12,7 @@ img.src = profilePicture;
 
 const words = {
 	EN: {
-		AboutMe: "ABOUT ME",
+		aboutMe: "ABOUT ME",
 		work: "WORK",
 		experience: "EXPERIENCE",
 		darkMode: "DARK MODE",
@@ -26,7 +24,7 @@ const words = {
 		title: "MY NAME IS RICHÁRD AND I LIKE TO CODE.",
 	},
 	HU: {
-		AboutMe: "RÓLAM",
+		aboutMe: "RÓLAM",
 		work: "MUNKA",
 		experience: "TAPASZTALAT",
 		darkMode: "SÖTÉT MÓD",
@@ -39,57 +37,15 @@ const words = {
 	},
 };
 
-const work = {
-	type: "WORK",
-	content: {
-		BookShelf: {
-			text: {
-				EN: "Website to keep track of the readen books.",
-				HU: "Weboldal elolvasott könyvek számon tartásához.",
-			},
-			title: "BookShelf",
-			img: bookshelf,
-			github: "https://github.com/richard-nagy/BookShelf",
-			website: "https://richard-nagy.github.io/BookShelf/",
-			technologies: "React, SASS, Firebase Realtime Database",
-		},
-		BookManager: {
-			text: {
-				EN: "Website to manage database about books.",
-				HU: "Weboldal könyvekkel foglalkozó adatbázis kezeléséhez.",
-			},
-			title: "BookManager",
-			img: bookmanager,
-			github: "https://github.com/richard-nagy/BookManager",
-			website: "",
-			technologies: "React, Redux, MySQL, Axios",
-		},
-	},
-};
-
-const experience = {
-	type: "EXPERIENCE",
-	content: {
-		MATE: {
-			text: {
-				EN: "Website to keep track of the readen books.",
-				HU: "Weboldal elolvasott könyvek számon tartásához.",
-			},
-			title: "MATE",
-			technologies: "React, SASS, Firebase Realtime Database",
-		},
-	},
-};
-
 function switcher(prop, language) {
 	switch (prop) {
 		default:
 		case "Work":
-			return <Work work={work} language={language} />;
+			return <Work language={language} />;
 		case "Experience":
-			return <Experience experience={experience} language={language} />;
+			return <Experience language={language} />;
 		case "AboutMe":
-			return <AboutMe language={language.language} />;
+			return <AboutMe language={language} />;
 	}
 }
 
@@ -119,7 +75,7 @@ function App() {
 							{language.experience}
 						</li>
 						<li onClick={() => setTab("AboutMe")}>
-							{language.AboutMe}
+							{language.aboutMe}
 						</li>
 						<li className="option">
 							<p

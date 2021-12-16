@@ -1,19 +1,26 @@
-export default function Experience({ experience, language }) {
-    return (
-        <>
-            <h2>{experience.type}</h2>
-            <div className="line" />
+const experience = {
+	mate: {
+		title: {
+			EN: "REACT DEVELOPER",
+			HU: "REACT FEJLESZTŐ",
+		},
+		text: {
+			EN: "Intership in the developer department of the school, where we learned React and developed React websites.",
+			HU: "Szakmai gyakorlat az iskola fejlesztői alatt, ahol Reactot tanultunk és React weboldalakat fejleszettünk.",
+		},
+	},
+};
 
-            {Object.entries(experience.content).map((parameter) => (
-                <div className="item" key={parameter[1].title}>
-                    <h3>{parameter[1].title}</h3>
-                    <p>{parameter[1].text[language.language]}</p>
-                    <p>
-                        {language.technologies}:{" "}
-                        <b>{parameter[1].technologies} </b>
-                    </p>
-                </div>
-            ))}
-        </>
-    );
+export default function Experience({ language }) {
+	return (
+		<>
+			<h2>{language.experience}</h2>
+			<div className="line" />
+			<div className="item">
+				<h3>{experience.mate.title[language.language]}</h3>
+				<p>{experience.mate.text[language.language]}</p>
+				<p>{language.technologies}: React, PostgreSQL, Git</p>
+			</div>
+		</>
+	);
 }

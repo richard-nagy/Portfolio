@@ -1,33 +1,57 @@
-export default function Work({ work, language }) {
-    return (
-        <>
-            <h2>{work.type}</h2>
-            <div className="line"></div>
+import bookmanager from "../pictures/bookmanager.png";
+import bookshelf from "../pictures/bookshelf.png";
 
-            {Object.entries(work.content).map((parameter) => (
-                <div className="item" key={parameter[1].title}>
-                    <h3>{parameter[1].title}</h3>
-                    {parameter[1].img !== "" && (
-                        <img alt={parameter[1].img} src={parameter[1].img} />
-                    )}
-                    <p>{parameter[1].text[language.language]}</p>
-                    <p>
-                        GitHub Repository:{" "}
-                        <a href={parameter[1].github}>Link</a>
-                        {parameter[1].website !== "" && (
-                            <>
-                                <br />
-                                {language.website}:{" "}
-                                <a href={parameter[1].website}>Link</a>
-                            </>
-                        )}
-                    </p>
-                    <p>
-                        {language.technologies}:{" "}
-                        <b>{parameter[1].technologies} </b>
-                    </p>
-                </div>
-            ))}
-        </>
-    );
+const work = {
+	bookshelf: {
+		EN: "Website to keep track of the readen books.",
+		HU: "Weboldal elolvasott könyvek számon tartásához.",
+	},
+	bookmanager: {
+		EN: "Website to manage database about books.",
+		HU: "Weboldal könyvekkel foglalkozó adatbázis kezeléséhez.",
+	},
+};
+
+export default function Work({ language }) {
+	return (
+		<>
+			<h2>{language.work}</h2>
+			<div className="line"></div>
+
+			{/* BookShelf */}
+			<div className="item">
+				<h3>BOOKSHELF</h3>
+				<img alt={bookshelf} src={bookshelf} />
+				<p>{work.bookshelf[language.language]}</p>
+				<p>
+					GitHub Repository:{" "}
+					<a href="https://github.com/richard-nagy/BookShelf">Link</a>
+				</p>
+				<p>
+					{language.website}:{" "}
+					<a href="https://richard-nagy.github.io/BookShelf/">Link</a>
+				</p>
+				<p>
+					{language.technologies}:{" "}
+					<b>React, SASS, Firebase Realtime Database</b>
+				</p>
+			</div>
+
+			{/* BookManager */}
+			<div className="item">
+				<h3>BOOKMANAGER</h3>
+				<img alt={bookshelf} src={bookmanager} />
+				<p>{work.bookmanager[language.language]}</p>
+				<p>
+					GitHub Repository:{" "}
+					<a href="https://github.com/richard-nagy/BookManager">
+						Link
+					</a>
+				</p>
+				<p>
+					{language.technologies}: <b>React, Redux, MySQL, Axios</b>
+				</p>
+			</div>
+		</>
+	);
 }
