@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "../styles/App.scoped.css";
 import profilePicture from "../pictures/profilePicture.png";
 import Work from "./Work";
 import Experience from "./Experience";
 import AboutMe from "./AboutMe";
 import useLocalStorage from "use-local-storage";
-import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 
 const img = new Image();
 img.src = profilePicture;
@@ -61,7 +61,6 @@ function App() {
 	);
 
 	img.onload = () => {
-		console.log("ready");
 		setLoaded(true);
 	};
 
@@ -113,9 +112,6 @@ function App() {
 									<a href="https://github.com/richard-nagy">
 										<AiFillGithub />
 									</a>
-									{/* <a href="">
-										<AiFillLinkedin />
-									</a> */}
 								</div>
 								<p>nagy.richard0630@gmail.com</p>
 								<p>+36 20 237 1090</p>

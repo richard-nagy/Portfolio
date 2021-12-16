@@ -20,11 +20,10 @@ const aboutMe = {
 					As for my hobbies, I like to play video games, read books,
 					and spend time with my dog.
 					<br />
-					<p>
-						<a href={resumeEN} download="Richárd_Nagy-resume">
-							Download Resume ⇩
-						</a>
-					</p>
+					<br />
+					<a href={resumeEN} download="Richárd_Nagy-resume">
+						Download Resume ⇩
+					</a>
 				</>
 			),
 			HU: (
@@ -40,11 +39,11 @@ const aboutMe = {
 					Hogy a hobbiaimat is megemlítsem, szeretek videójátékokkal
 					játszani, könyvet olvasni, és a kutyámmal együtt időt
 					eltölteni.
-					<p>
-						<a href={resumeHU} download="Nagy_Richárd-önéletrajz">
-							Önéletrajz Letöltése ⇩
-						</a>
-					</p>
+					<br />
+					<br />
+					<a href={resumeHU} download="Nagy_Richárd-önéletrajz">
+						Önéletrajz Letöltése ⇩
+					</a>
 				</>
 			),
 		},
