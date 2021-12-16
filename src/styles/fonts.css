@@ -1,7 +1,6 @@
 @font-face {
 	font-family: Righteous;
-	src: local(Righteous),
-		url(./fonts/Righteous-Regular.ttf) format("truetype");
+	src: local(Righteous), url(./fonts/Righteous-Regular.ttf) format("truetype");
 }
 
 @font-face {

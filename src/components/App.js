@@ -77,15 +77,17 @@ function App() {
 						<li onClick={() => setTab("AboutMe")}>
 							{language.aboutMe}
 						</li>
-						<li className="option">
-							<p
+						<div>
+							<li
+								className="option"
 								onClick={() => {
 									setLanguage(words[language.switchTo]);
 								}}
 							>
 								{language.switchTo}
-							</p>
-							<p
+							</li>
+							<li
+								className="option"
 								onClick={() => {
 									const newTheme =
 										theme === "light" ? "dark" : "light";
@@ -95,8 +97,8 @@ function App() {
 								{theme === "light"
 									? language.darkMode
 									: language.lightMode}
-							</p>
-						</li>
+							</li>
+						</div>
 					</ul>
 					<div className="content">
 						<div className="leftBar">

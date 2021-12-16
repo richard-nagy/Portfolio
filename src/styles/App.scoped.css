@@ -39,7 +39,7 @@ ul {
 	overflow: hidden;
 	color: var(--primary);
 	font-family: Righteous;
-	font-size: 20px;
+	font-size: 22px;
 	transition: all 0.5s;
 	opacity: 0;
 	animation: showNavbar 1s 1.5s forwards;
@@ -55,9 +55,7 @@ li {
 
 .option {
 	font-size: 14px;
-	margin: 24px 5px 25px 10px;
-	text-decoration: underline;
-	text-decoration-style: dashed;
+	margin: 25px 5px 25px 10px;
 	display: flex;
 }
 
@@ -104,7 +102,7 @@ ul li p {
 	color: var(--primary);
 	margin: 5px;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 16px;
 	transition: all 0.5s;
 }
 
@@ -116,11 +114,11 @@ ul li p {
 	transition: all 0.5s;
 }
 
-.profile .icons {
+.icons {
 	margin: 10px 0 10px 0;
 }
 
-.profile .icons a {
+.icons a {
 	margin: 10px;
 	cursor: pointer;
 	color: var(--primary);
@@ -169,6 +167,7 @@ h3 {
 	font-family: Khula;
 	transition: all 0.5s;
 	margin: 10px 0 0 0;
+	font-size: 18px;
 }
 
 a {
@@ -184,6 +183,20 @@ a {
 
 p a {
 	text-decoration: none;
+}
+
+ul div {
+	display: flex;
+	flex-direction: row;
+}
+
+a:hover,
+li:hover {
+	text-decoration: underline;
+}
+
+.icons a:hover {
+	font-size: 50px;
 }
 
 @import "mobileView.css";
