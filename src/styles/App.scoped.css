@@ -22,6 +22,7 @@ body {
 	transition: all 0.5s;
 }
 
+/* App */
 .app {
 	background-color: var(--secondary);
 	margin: auto;
@@ -53,14 +54,15 @@ li {
 	cursor: pointer;
 }
 
+ul div {
+	display: flex;
+	flex-direction: row;
+}
+
 .option {
 	font-size: 14px;
 	margin: 25px 5px 25px 10px;
 	display: flex;
-}
-
-ul li p {
-	margin: 0 0 0 10px;
 }
 
 .content {
@@ -115,36 +117,26 @@ ul li p {
 }
 
 .icons {
-	margin: 10px 0 10px 0;
+	margin: 10px;
 }
 
 .icons a {
-	margin: 10px;
 	cursor: pointer;
 	color: var(--primary);
 	font-size: 30px;
 	transition: all 0.5s;
 }
 
+.icons a:hover {
+	font-size: 50px;
+}
+
+/* Items */
 .items {
 	flex: 1 1 300px;
 	min-width: 300px;
 	opacity: 0;
 	animation: itemMoveIn 1s 1s forwards;
-}
-
-h2 {
-	font-family: Righteous;
-	margin: 0;
-	color: var(--primary);
-	transition: all 0.5s;
-}
-
-h3 {
-	font-family: Righteous;
-	margin: 0 0 10px 0;
-	color: var(--secondary);
-	transition: all 0.5s;
 }
 
 .line {
@@ -170,24 +162,20 @@ h3 {
 	font-size: 18px;
 }
 
-a {
-	color: var(--secondary);
-	transition: all 0.5s;
-}
-
 .item img {
 	height: auto;
 	margin-top: 20px;
 	width: 70%;
 }
 
+/* Other */
 p a {
 	text-decoration: none;
 }
 
-ul div {
-	display: flex;
-	flex-direction: row;
+a {
+	color: var(--secondary);
+	transition: all 0.5s;
 }
 
 a:hover,
@@ -195,8 +183,18 @@ li:hover {
 	text-decoration: underline;
 }
 
-.icons a:hover {
-	font-size: 50px;
+h2 {
+	font-family: Righteous;
+	margin: 0;
+	color: var(--primary);
+	transition: all 0.5s;
+}
+
+h3 {
+	font-family: Righteous;
+	margin: 0 0 10px 0;
+	color: var(--secondary);
+	transition: all 0.5s;
 }
 
 @import "mobileView.css";
