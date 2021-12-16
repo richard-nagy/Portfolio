@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.bda755fb.chunk.css",
+    "main.js": "/Portfolio/static/js/main.0573eb23.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.0573eb23.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.c65a14fc.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.c65a14fc.js.map",
+    "static/js/2.40f6ec21.chunk.js": "/Portfolio/static/js/2.40f6ec21.chunk.js",
+    "static/js/2.40f6ec21.chunk.js.map": "/Portfolio/static/js/2.40f6ec21.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "static/css/main.bda755fb.chunk.css.map": "/Portfolio/static/css/main.bda755fb.chunk.css.map",
+    "static/js/2.40f6ec21.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.40f6ec21.chunk.js.LICENSE.txt",
+    "static/media/Richárd_Nagy-resumeEN.a421e634.pdf": "/Portfolio/static/media/Richárd_Nagy-resumeEN.a421e634.pdf",
+    "static/media/Richárd_Nagy-resumeHU.2132f709.pdf": "/Portfolio/static/media/Richárd_Nagy-resumeHU.2132f709.pdf",
+    "static/media/App.scoped.css": "/Portfolio/static/media/Righteous-Regular.fd011047.ttf",
+    "static/media/bookmanager.9fe1652b.png": "/Portfolio/static/media/bookmanager.9fe1652b.png",
+    "static/media/bookshelf.b7994280.png": "/Portfolio/static/media/bookshelf.b7994280.png",
+    "static/media/profilePicture.95262606.png": "/Portfolio/static/media/profilePicture.95262606.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c65a14fc.js",
+    "static/js/2.40f6ec21.chunk.js",
+    "static/css/main.bda755fb.chunk.css",
+    "static/js/main.0573eb23.chunk.js"
+  ]
+}
