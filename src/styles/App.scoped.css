@@ -168,6 +168,10 @@ ul div {
 	width: 70%;
 }
 
+.BsDownload {
+	margin-bottom: -2px;
+}
+
 /* Other */
 p a {
 	text-decoration: none;

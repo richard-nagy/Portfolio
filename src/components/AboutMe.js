@@ -1,3 +1,6 @@
+import resumeEN from "../other/Richárd_Nagy-resumeEN.pdf";
+import resumeHU from "../other/Richárd_Nagy-resumeHU.pdf";
+
 const aboutMe = {
 	myself: {
 		title: {
@@ -16,9 +19,12 @@ const aboutMe = {
 					<br />
 					As for my hobbies, I like to play video games, read books,
 					and spend time with my dog.
-					{/* <br />
-						<br />
-						<a href="">Download Resume</a> */}
+					<br />
+					<p>
+						<a href={resumeEN} download="Richárd_Nagy-resume">
+							Download Resume ⇩
+						</a>
+					</p>
 				</>
 			),
 			HU: (
@@ -34,9 +40,11 @@ const aboutMe = {
 					Hogy a hobbiaimat is megemlítsem, szeretek videójátékokkal
 					játszani, könyvet olvasni, és a kutyámmal együtt időt
 					eltölteni.
-					{/* <br />
-						<br />
-						<a href="">Önéletrajz letöltése</a> */}
+					<p>
+						<a href={resumeHU} download="Nagy_Richárd-önéletrajz">
+							Önéletrajz Letöltése ⇩
+						</a>
+					</p>
 				</>
 			),
 		},
