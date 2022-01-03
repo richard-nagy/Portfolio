@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+## About the project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a portfolio website to showcase my knowledge and experience (which absolutely exist).
+
+I made this project with React, and published it to GitHub Pages.
+
+The Website can be viewed here: [Website](https://richard-nagy.github.io/Portfolio/ "Website")
+
+If you are interested in my other projects check out the pinned repositories on my profile: [Profile](https://github.com/richard-nagy "Profile")
 
 ## Available Scripts
 
