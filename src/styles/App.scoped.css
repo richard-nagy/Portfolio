@@ -118,6 +118,10 @@ ul div {
 
 .icons {
 	margin: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
 }
 
 .icons a {

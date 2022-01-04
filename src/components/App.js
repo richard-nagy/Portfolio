@@ -5,7 +5,7 @@ import Work from "./Work";
 import Experience from "./Experience";
 import AboutMe from "./AboutMe";
 import useLocalStorage from "use-local-storage";
-import { AiFillGithub } from "react-icons/ai";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 
 const img = new Image();
 img.src = profilePicture;
@@ -55,10 +55,7 @@ function App() {
 	const [loaded, setLoaded] = useState(false);
 
 	const defaultDark = window.matchMedia("(data-theme: dark)").matches;
-	const [theme, setTheme] = useLocalStorage(
-		"theme",
-		defaultDark ? "dark" : "light"
-	);
+	const [theme, setTheme] = useLocalStorage("theme", defaultDark ? "dark" : "light");
 
 	img.onload = () => {
 		setLoaded(true);
@@ -70,12 +67,8 @@ function App() {
 				<div className="app">
 					<ul>
 						<li onClick={() => setTab("Work")}>{language.work}</li>
-						<li onClick={() => setTab("Experience")}>
-							{language.experience}
-						</li>
-						<li onClick={() => setTab("AboutMe")}>
-							{language.aboutMe}
-						</li>
+						<li onClick={() => setTab("Experience")}>{language.experience}</li>
+						<li onClick={() => setTab("AboutMe")}>{language.aboutMe}</li>
 						<div>
 							<li
 								className="option"
@@ -88,14 +81,11 @@ function App() {
 							<li
 								className="option"
 								onClick={() => {
-									const newTheme =
-										theme === "light" ? "dark" : "light";
+									const newTheme = theme === "light" ? "dark" : "light";
 									setTheme(newTheme);
 								}}
 							>
-								{theme === "light"
-									? language.darkMode
-									: language.lightMode}
+								{theme === "light" ? language.darkMode : language.lightMode}
 							</li>
 						</div>
 					</ul>
@@ -111,6 +101,9 @@ function App() {
 								<div className="icons">
 									<a href="https://github.com/richard-nagy">
 										<AiFillGithub />
+									</a>
+									<a href="https://www.linkedin.com/in/richardnagy0630">
+										<AiFillLinkedin />
 									</a>
 								</div>
 								<p>nagy.richard0630@gmail.com</p>

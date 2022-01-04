@@ -1,5 +1,5 @@
-import resumeEN from "../other/Richárd_Nagy-resumeEN.pdf";
-import resumeHU from "../other/Richárd_Nagy-resumeHU.pdf";
+import resumeEN from "../other/Richárd_Nagy-resume-EN.pdf";
+import resumeHU from "../other/Richárd_Nagy-resume-HU.pdf";
 
 const aboutMe = {
 	myself: {
@@ -10,35 +10,31 @@ const aboutMe = {
 		text: {
 			EN: (
 				<>
-					I'm a self taught Junior React Developer or at least I like
-					to think I am. I finished my studies on Software Information
-					Technology, and currently learning React in my free time.
-					Although I don't offer a lot of experience from my side, I
-					am passionately learning, and my long time plan is to become
-					a full time react developer.
+					I'm a self taught Junior React Developer or at least I like to think I am. I
+					finished my studies on Software Information Technology, and currently learning
+					React in my free time. Although I don't offer a lot of experience from my side,
+					I am passionately learning, and my long time plan is to become a full time react
+					developer.
 					<br />
-					As for my hobbies, I like to play video games, read books,
-					and spend time with my dog.
+					As for my hobbies, I like to play video games, read books, and spend time with
+					my dog.
 					<br />
 					<br />
 					<a href={resumeEN} download="Richárd_Nagy-resume">
-						Download Resume ⇩
+						<b>Download Resume ⇩</b>
 					</a>
 				</>
 			),
 			HU: (
 				<>
-					Öntanított Junior React Fejlesztő vagyok vagy legalább is az
-					szeretnék lenni. A tanulmányaimat Programtervező
-					Informatikus szakon végeztem, jelen pillanatban pedig a
-					szabadidőmben Reactot tanulok. Annak ellenére hogy a
-					részemről nem tudok sok tapasztalatot felkínálni, lelkesen
-					tanulok, és a hoszú távú tervem az hogy egy nap React
-					fejlesztő legyek.
+					Öntanított Junior React Fejlesztő vagyok vagy legalább is az szeretnék lenni. A
+					tanulmányaimat Programtervező Informatikus szakon végeztem, jelen pillanatban
+					pedig a szabadidőmben Reactot tanulok. Annak ellenére hogy a részemről nem tudok
+					sok tapasztalatot felkínálni, lelkesen tanulok, és a hoszú távú tervem az hogy
+					egy nap React fejlesztő legyek.
 					<br />
-					Hogy a hobbiaimat is megemlítsem, szeretek videójátékokkal
-					játszani, könyvet olvasni, és a kutyámmal együtt időt
-					eltölteni.
+					Hogy a hobbiaimat is megemlítsem, szeretek videójátékokkal játszani, könyvet
+					olvasni, és a kutyámmal együtt időt eltölteni.
 					<br />
 					<br />
 					<a href={resumeHU} download="Nagy_Richárd-önéletrajz">
