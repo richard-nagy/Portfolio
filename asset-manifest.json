@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.86368661.chunk.css",
-    "main.js": "/Portfolio/static/js/main.0a56300f.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.0a56300f.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.f2e3a29e.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.f2e3a29e.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.c65a14fc.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.c65a14fc.js.map",
     "static/js/2.3aa9480f.chunk.js": "/Portfolio/static/js/2.3aa9480f.chunk.js",
@@ -10,7 +10,7 @@
     "index.html": "/Portfolio/index.html",
     "static/css/main.86368661.chunk.css.map": "/Portfolio/static/css/main.86368661.chunk.css.map",
     "static/js/2.3aa9480f.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.3aa9480f.chunk.js.LICENSE.txt",
-    "static/media/Richárd_Nagy-resume-EN.b37af3f9.pdf": "/Portfolio/static/media/Richárd_Nagy-resume-EN.b37af3f9.pdf",
+    "static/media/Richárd_Nagy-resume-EN.b3adb73c.pdf": "/Portfolio/static/media/Richárd_Nagy-resume-EN.b3adb73c.pdf",
     "static/media/Richárd_Nagy-resume-HU.19503262.pdf": "/Portfolio/static/media/Richárd_Nagy-resume-HU.19503262.pdf",
     "static/media/App.scoped.css": "/Portfolio/static/media/Righteous-Regular.fd011047.ttf",
     "static/media/bookmanager.9fe1652b.png": "/Portfolio/static/media/bookmanager.9fe1652b.png",
@@ -21,6 +21,6 @@
     "static/js/runtime-main.c65a14fc.js",
     "static/js/2.3aa9480f.chunk.js",
     "static/css/main.86368661.chunk.css",
-    "static/js/main.0a56300f.chunk.js"
+    "static/js/main.f2e3a29e.chunk.js"
   ]
 }
