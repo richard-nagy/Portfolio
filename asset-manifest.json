@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.86368661.chunk.css",
-    "main.js": "/Portfolio/static/js/main.f2e3a29e.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.f2e3a29e.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.4843423c.chunk.css",
+    "main.js": "/Portfolio/static/js/main.5c9edc0d.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.5c9edc0d.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.c65a14fc.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.c65a14fc.js.map",
-    "static/js/2.3aa9480f.chunk.js": "/Portfolio/static/js/2.3aa9480f.chunk.js",
-    "static/js/2.3aa9480f.chunk.js.map": "/Portfolio/static/js/2.3aa9480f.chunk.js.map",
+    "static/js/2.3a16562f.chunk.js": "/Portfolio/static/js/2.3a16562f.chunk.js",
+    "static/js/2.3a16562f.chunk.js.map": "/Portfolio/static/js/2.3a16562f.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.86368661.chunk.css.map": "/Portfolio/static/css/main.86368661.chunk.css.map",
-    "static/js/2.3aa9480f.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.3aa9480f.chunk.js.LICENSE.txt",
+    "static/css/main.4843423c.chunk.css.map": "/Portfolio/static/css/main.4843423c.chunk.css.map",
+    "static/js/2.3a16562f.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.3a16562f.chunk.js.LICENSE.txt",
     "static/media/Richárd_Nagy-resume-EN.b3adb73c.pdf": "/Portfolio/static/media/Richárd_Nagy-resume-EN.b3adb73c.pdf",
     "static/media/Richárd_Nagy-resume-HU.19503262.pdf": "/Portfolio/static/media/Richárd_Nagy-resume-HU.19503262.pdf",
     "static/media/App.scoped.css": "/Portfolio/static/media/Righteous-Regular.fd011047.ttf",
     "static/media/bookmanager.9fe1652b.png": "/Portfolio/static/media/bookmanager.9fe1652b.png",
     "static/media/bookshelf.b7994280.png": "/Portfolio/static/media/bookshelf.b7994280.png",
+    "static/media/chatroom.4b647861.png": "/Portfolio/static/media/chatroom.4b647861.png",
     "static/media/profilePicture.95262606.png": "/Portfolio/static/media/profilePicture.95262606.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c65a14fc.js",
-    "static/js/2.3aa9480f.chunk.js",
-    "static/css/main.86368661.chunk.css",
-    "static/js/main.f2e3a29e.chunk.js"
+    "static/js/2.3a16562f.chunk.js",
+    "static/css/main.4843423c.chunk.css",
+    "static/js/main.5c9edc0d.chunk.js"
   ]
 }
