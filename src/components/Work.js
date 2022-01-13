@@ -1,5 +1,6 @@
 import bookmanager from "../pictures/bookmanager.png";
 import bookshelf from "../pictures/bookshelf.png";
+import chatroom from "../pictures/chatroom.png";
 
 const work = {
 	bookshelf: {
@@ -10,6 +11,10 @@ const work = {
 		EN: "Website to manage database about books.",
 		HU: "Weboldal könyvekkel foglalkozó adatbázis kezeléséhez.",
 	},
+	chatroom: {
+		EN: "Website where you can talk with other people in real time.",
+		HU: "Weboldal amelyen tudnak emberek egymással tudnak beszélni valós időben.",
+	}
 };
 
 export default function Work({ language }) {
@@ -50,6 +55,22 @@ export default function Work({ language }) {
 				</p>
 				<p>
 					{language.technologies}: <b>React, Redux, MySQL, Axios</b>
+				</p>
+			</div>
+
+			{/* Chat Room */}
+			<div className="item">
+				<h3>CHAT ROOM</h3>
+				<img alt={chatroom} src={chatroom} />
+				<p>{work.chatroom[language.language]}</p>
+				<p>
+					GitHub Repository:{" "}
+					<a href="https://github.com/richard-nagy/ChatRoom">
+						Link
+					</a>
+				</p>
+				<p>
+					{language.technologies}: <b>React, Firebase Firestore</b>
 				</p>
 			</div>
 		</>
